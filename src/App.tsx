@@ -24,7 +24,7 @@ const App = () => (
       <QueueProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename="/H_Chain">
           <OfflineBanner />
           <Header />
           <Routes>
