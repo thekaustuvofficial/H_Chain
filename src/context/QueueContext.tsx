@@ -123,7 +123,6 @@ function prescriptionToDbPrescription(p: Prescription): any {
     status: p.status,
     ai_generated: p.aiGenerated,
     doctor_verified: p.doctorVerified,
-    created_at: p.createdAt,  // Add this field
     forwarded_at: p.forwardedAt,
     dispensed_at: p.dispensedAt,
   };

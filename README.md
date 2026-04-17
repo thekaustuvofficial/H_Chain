@@ -62,7 +62,22 @@ This project is built with:
 
 ## How can I deploy this project?
 
+### Lovable Deployment
 Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+
+### GitHub Actions Deployment (GitHub Pages)
+This project includes a GitHub Actions workflow (`deploy.yml`) that automatically builds and deploys the frontend to GitHub Pages on every push to the `main` branch.
+
+**To set up GitHub Actions deployment:**
+1.  Go to your GitHub repository settings.
+2.  Navigate to **Settings > Pages**.
+3.  Under **Build and deployment**, set the **Source** to **GitHub Actions**.
+4.  Navigate to **Settings > Secrets and variables > Actions**.
+5.  Add the following **Repository secrets**:
+    - `VITE_SUPABASE_URL`: Your Supabase Project URL.
+    - `VITE_SUPABASE_ANON_KEY`: Your Supabase Anonymous Key.
+
+The workflow will run automatically on your next push, or you can trigger it manually from the **Actions** tab.
 
 ## Can I connect a custom domain to my Lovable project?
 

@@ -18,7 +18,6 @@ import {
 } from '@/components/ui/dialog';
 import { generateAIPrescription, simulateAIProcessing } from '@/lib/prescription-engine';
 import { MedicalHistoryPanel } from '@/components/doctor/MedicalHistoryPanel';
-import { toast } from 'sonner';
 import { 
   Phone, 
   Users, 

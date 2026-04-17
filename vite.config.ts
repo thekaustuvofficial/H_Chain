@@ -12,6 +12,8 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
+  // If you are deploying to GitHub Pages, set the base path to your repository name.
+  // base: mode === 'production' ? '/HealthChain/' : '/',
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
